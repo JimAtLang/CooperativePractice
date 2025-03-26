@@ -12,12 +12,12 @@ public class Main {
         Repeater r = new Repeater();
         Combiner cm = new Combiner();
 
-        int count = c.count(s,n);
+        int count = c.count(s);
         int quot = d.divide(s,n);
         int prod = r.repeat(count, quot);
         int rem = m.modulate(s, n);
-        int slice = c.count(s,rem);
-        int total = cm.combine(rem, slice);
+        int slice = c.countPart(s,rem);
+        int total = cm.combine(prod, slice);
         System.out.println(total);
     }
 }
