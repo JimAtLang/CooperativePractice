@@ -1,5 +1,6 @@
 public class Modulator {
     public int modulate(String s, int n){
-        return 0;
+        int remainder=  n % s.length();
+        return remainder;
     }
 }
