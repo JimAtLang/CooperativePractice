@@ -5,6 +5,8 @@ public class Solver {
     Repeater r = new Repeater();
     Combiner cm = new Combiner();
 
+
+    //this solves the problem!
     public int solve(String s, int n){
         int count = c.count(s);
         int quot = d.divide(s,n);
