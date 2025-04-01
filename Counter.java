@@ -10,6 +10,13 @@ public class Counter {
     }
 
     public int countPart(String s, int n){
-        return 0;
+        char[] cc = s.toCharArray();
+        int count = 0;
+        for (int i = 0; i < cc.length; i++) {
+            if cc[i] == 'x' {
+                    count++;
+                }
+        }
+        return count;
     }
 }
