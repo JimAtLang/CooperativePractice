@@ -1,8 +1,8 @@
 public class Counter {
     public int count(String s){
         int count=0;
-        for(i=0; i<s.length(); i++){
-            if(s.charAt(i)==x){
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i)=='x'){
                 count+=1;
             }
         }
@@ -13,7 +13,7 @@ public class Counter {
         char[] cc = s.toCharArray();
         int count = 0;
         for (int i = 0; i < cc.length; i++) {
-            if cc[i] == 'x' {
+            if (cc[i] == 'x') {
                     count++;
                 }
         }
